@@ -1,5 +1,7 @@
 # LootCrate System
 
+# - Stefan, Ayman, Ahmad og Magnus
+
 ## Projektbeskrivelse
 LootCrate System er et mindre Java-projekt, der simulerer et loot crate-system i et spil. Spillere har credits, som de kan bruge til at åbne forskellige typer loot crates. Hver loot crate har et navn og en pris. Systemet kontrollerer, om spilleren har nok credits, før spilleren får lov til at åbne en loot crate.
 
