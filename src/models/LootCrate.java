@@ -14,7 +14,9 @@ public class LootCrate {
 
     public void open(Player player) throws PlayerNotFoundException, NotEnoughCreditsException {
 
+
         if (player == null) {
+            System.out.println("\n --- Prøver at åbne en crate ---");
             throw new PlayerNotFoundException("Fejl: Kan ikke åbne crate, fordi spilleren ikke findes!");
         }
 
@@ -27,13 +29,5 @@ public class LootCrate {
         player.buyCrate(this.price);
         System.out.println("Succes! " + player.getName() + " åbnede " + id + " og fik et fedt item!");
 
-    }
-
-    public String getId() {
-        return id;
-    }
-
-    public int getPrice() {
-        return price;
     }
 }

@@ -11,7 +11,8 @@ public class Player {
         this.credits = startCredits;
     }
 
-    public void addCredits(int amount) {
+    public void addCredits(int amount, Player player) {
+        System.out.println("\n--- Prøver at tilføje credits " + player.getName() + " ---");
         if (amount < 0) {
             throw new NegativeAmountException("Fejl: Du kan ikke tilføje et negativt beløb!");
         }
